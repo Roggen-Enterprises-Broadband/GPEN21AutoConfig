@@ -55,11 +55,13 @@ namespace GPEN21_Setup
             if (!gpenConnected(ps.AddScript("$pingout = (cmd /c ping " + hostname + " -n 1); $pingout").Invoke()[2].BaseObject.ToString(), hostname))
             {
                 log("GPEN not connected.");
+                //Change to files included in the REPO
                 NotConnectedImage.Source = new BitmapImage(new Uri(@"C:\Users\ncabral\Documents\GPEN21 Files\GPEN21 Setup\Disconnected.png"));
                 ConnectivityNotification.Content = "GPEN21 Not Connected!";
             }
             else
             {
+                //Change to files included in the REPO
                 NotConnectedImage.Source = new BitmapImage(new Uri(@"C:\Users\ncabral\Documents\GPEN21 Files\GPEN21 Setup\Connected.png"));
                 ConnectivityNotification.Content = "GPEN21 Connected!";
             }
