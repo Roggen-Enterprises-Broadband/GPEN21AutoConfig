@@ -3,6 +3,9 @@ Auto configures a GPEN21.
 This was built to assist us in deploying lots of GPEN21s as FTTH/B/P ONTs
 
 Bascially there are two programs being run. A Powershell script that is able to make the changes to a GPEN21 and a graphical UI built in C# that invokes the Powershell script.
+
+Password is changed from -blank- to "password"
+
 Port1 becomes the "internet access port", the port enables untagged access to that VLAN and no other VLANs.
 Port2 becomes an access port for VLAN 999 which is the Managment VLAN for the GPEN21
 SFP1 becomes a trunk port for the configured VLAN and VLAN 999. 
