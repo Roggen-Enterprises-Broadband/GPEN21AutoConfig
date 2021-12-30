@@ -23,20 +23,16 @@ Our hope is to someday make this program more flexible to fit more network deplo
 To use the "GPEN21 Setup.exe" program.
 
 1. Create a folder that will act as the root directory for the program.
-	a. Place the "GPEN21 Setup.exe" file in the directory.
-		• This program will automatically switch its working
-		  directory to whever the executed file is located.
-
-	b. Place the "GPEN21_Config.ps1" powershell script in the same directory.
-	c. Place the "DEFAULT_CONFIG.swb" file in the same directory.
-	d. Place the "curl.exe" file in the same directory.
-	e. Place the "Connected.png" image in the same directory.
-	f. Place the "Disconnected.png" image in the same directory.
+   - Place the "GPEN21 Setup.exe" file in the directory. Note: This program will automatically switch its working directory to where ever the executed file is located.
+   - Place the "GPEN21_Config.ps1" powershell script in the same directory.
+   - Place the "DEFAULT_CONFIG.swb" file in the same directory.
+   - Place the "curl.exe" file in the same directory.
+   - Place the "Connected.png" image in the same directory.
+   - Place the "Disconnected.png" image in the same directory.
 
 2. Create a folder in the directory called "Firmware".
-	a. Place the swos-gpen21-[version].bin file in this folder.
-	b. You will need to modify the "GPEN21_Config.ps1" powershell
-	  script to upload the specific version you want to upload from this directory.
+   - Place the swos-gpen21-[version].bin file in this folder.
+   - You will need to modify the "GPEN21_Config.ps1" powershell script to upload the specific version you want to upload from this directory.
 
 3. Create a folder in the directory called "logs"
-	a. you do not need to put anything in this directory. The "GPEN21 Setup.exe" program 	   	   		   will create the log by itself.
+   - Note: you do not need to put anything in this directory. The "GPEN21 Setup.exe" program will create the log by itself.
